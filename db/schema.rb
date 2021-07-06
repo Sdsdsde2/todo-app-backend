@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2021_07_04_150726) do
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.string "user_name"
+    t.string "username"
     t.string "password_digest"
     t.integer "task_id"
     t.datetime "created_at", precision: 6, null: false

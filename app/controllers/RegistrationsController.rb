@@ -3,7 +3,7 @@ class RegistrationsController < ApplicationController
         user = User.create!(
             first_name: params[:first_name],
             last_name: params[:last_name],
-            user_name: params[:user_name],
+            username: params[:username],
             password: params[:password],
             password_confirmation: params[:password_confirmation],
         )
