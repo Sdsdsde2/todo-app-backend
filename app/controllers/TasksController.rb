@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
     def index
         @tasks = Task.all
-        render json: {tasks: @tasks}
+        render json: {tasks: @tasks}, include: :users
     end
 
     def new 
@@ -24,6 +24,10 @@ class TasksController < ApplicationController
 
     def show
         @task = Task.find(params[:id])
-        render json: {task: @task}
+        render json: {task: @task}, include: :users
+    end
+
+    def update
+        @task = Task.find(params[:id])
     end
 end
