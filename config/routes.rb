@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   delete :logout, to: "sessions#logout"
   get :logged_in, to: "sessions#logged_in"
   resources :tasks, only: [:index, :create, :show]
-  resources :tasksusers, only: [:create, :show]
+  resources :tasksusers, only: [:index, :create, :delete, :show, :destroy]
 end

@@ -20,6 +20,6 @@ class TasksusersController < ApplicationController
     
     def destroy
         tasksuser = TasksUser.find_by(id: params[:id])
-        tasksuser.destroy
+        TasksUser.destroy(tasksuser.id)
     end
 end
