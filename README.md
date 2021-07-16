@@ -1,25 +1,4 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # todo-app-backend
+Ruby on Rails API backend for the todo app.
+Frontend created with JavaScript and React.
+Fontend can be found here: https://github.com/Sdsdsde2/todo-app-frontend
